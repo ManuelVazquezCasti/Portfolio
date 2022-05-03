@@ -1,0 +1,78 @@
+body{
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Header{
+  background-image: url("img/fondo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+
+}
+
+.HeaderText{
+  position: relative;
+  padding: 15% 0 10%;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.Navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0; 
+}
+
+.Navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: black;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .Navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .Navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .Navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+.AboutMe {
+  margin: 15px;
+  border: 3px solid black;
+}
+
+.proyects{
+  margin: 15px;
+  border: 3px solid black;
+}
+
+.Skills{
+  margin: 15px;
+  border: 3px solid black;
+}
