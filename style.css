@@ -1,9 +1,11 @@
 body{
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  background-color: rgb(255, 233, 206);
 }
 
 .Header{
+  max-height: 400px;
   background-image: url("img/fondo.jpg");
   background-position: center;
   background-size: cover;
@@ -64,17 +66,26 @@ body{
 
 .AboutMe {
   margin: 15px;
-  border: 3px solid black;
 }
 
-.proyects{
+.AboutMe h1{
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.projects{
   margin: 15px;
-  border: 3px solid black;
+}
+
+.projects h1{
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .Skills{
   margin: 15px;
-  border: 3px solid black;
+}
+
+.Skills h1{
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .Skills img{
@@ -94,9 +105,44 @@ body{
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
+.dark-mode h1{
+  text-shadow: 1px 1px 4px rgba(242, 227, 227, 0.5);
+}
+
+.dark-mode h4{
+  text-shadow: 1px 1px 4px rgba(242, 227, 227, 0.5);
+}
+
 .btn {
   margin: 5px;
   cursor: pointer;
   border: 0;
   background-color: transparent;
+}
+
+.Contact{
+  margin-left: 15px;
+}
+
+.Contact img{
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 25px;
+  height: 25px;
+  transition: transform .2s;
+}
+
+.Contact img:hover{
+  transform: scale(1.5);
+}
+
+.Contact a{
+  margin-bottom: 20px;
+  margin-left: 20px;
+  position: relative;
+  bottom: 20px;
+}
+
+.Contact h4{
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
