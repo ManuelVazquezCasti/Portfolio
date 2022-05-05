@@ -46,6 +46,10 @@ body{
 
 }
 
+.Navigation a:hover {
+  background-color: #aecef4;
+}
+
 .AboutMe {
   margin: 15px;
 }
@@ -133,6 +137,21 @@ body{
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
+.ContactList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0; 
+}
+
+.ContactList a {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  position: relative;
+  bottom: 20px;
+}
+
 @media all and (max-width: 800px) {
   body {
     font-size:1.2rem;
@@ -140,11 +159,30 @@ body{
   .navigation {
     justify-content: space-around;
   }
+  .Contact {
+    justify-content: space-around;
+  }
+  .ContactList {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .ContactList a { 
+    text-align: center; 
+    padding: 10px; 
+  }
+  iframe {
+    width: 560px; 
+    height: 315px;
+  }
 }
 
 @media all and (max-width: 600px) {
   body {
     font-size:1rem;
+  }
+  iframe {
+    width: 373px; 
+    height: 210px;
   }
   .Navigation {
     flex-flow: column wrap;
@@ -152,9 +190,7 @@ body{
   }
   .Navigation a { 
     text-align: center; 
-    padding: 10px;
-    border-top: 1px solid rgba(255, 255, 255,0.3); 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
   }
   .Navigation li:last-of-type a {
     border-bottom: none;
