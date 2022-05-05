@@ -152,7 +152,7 @@ body{
   bottom: 20px;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 900px) {
   body {
     font-size:1.2rem;
   }
@@ -170,19 +170,15 @@ body{
     text-align: center; 
     padding: 10px; 
   }
-  iframe {
-    width: 560px; 
-    height: 315px;
-  }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 850px) {
   body {
     font-size:1rem;
   }
   iframe {
-    width: 373px; 
-    height: 210px;
+    width: 560px; 
+    height: 315px;
   }
   .Navigation {
     flex-flow: column wrap;
@@ -194,5 +190,12 @@ body{
   }
   .Navigation li:last-of-type a {
     border-bottom: none;
+  }
+}
+
+@media all and (max-width: 600px) {
+  iframe {
+    width: 373px; 
+    height: 210px;
   }
 }
