@@ -1,2 +1,2 @@
 # Portfolio
-Link to pages: https://manuelvazquezcasti.github.io/Portfolio/
+Link to pages: https://vazcas.github.io/Portfolio/
