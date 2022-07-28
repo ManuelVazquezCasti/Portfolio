@@ -13,8 +13,9 @@
                 <li><a href="#AboutMe">About me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#Skills">Skills</a></li>
+                <li><a href="#certificates">certificates</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><button onclick="myFunction()" class="btn"><img src="img/darkmode.png" width="40" height="40"/></button></li>
+                <li><button onclick="myFunction()" class="btn"><img src="img/icons/darkmode.png" width="40" height="40"/></button></li>
             </ul>
             <div class="HeaderText">
                 <h1>Manuel Vázquez Castiñeira</h1>
@@ -22,7 +23,7 @@
         </div>
         <div class="AboutMe" id="AboutMe">
             <h1>About me</h1>
-            <p>Hi, I'm Manuel, a spanish programmer and developer. Also I have a degree in Administration of informatics systems and networking. Other things that I have experience is in SQL, Ubuntu Server and PHP</p>
+            <p>Hi, I'm Manuel, a spanish programmer and developer. Also I have a Higher VET Diploma in Network Computer Systems Administrator. Other things that I have experience is in SQL, Ubuntu Server and PHP</p>
             <p>I have experience working in a concessionaire has a informatic specialized in server maintenance.</p>
             <p>In my free time I like to play basketball and doing other sports, hang out with friends and play videogames.</p>
         </div>  
@@ -37,19 +38,86 @@
         </div>       
         <div class="Skills" id="Skills">
             <h1>Skills</h1>
-            <img src="img/iconHTML.png"/>
-            <img src="img/iconCSS.png"/>
-            <img src="img/iconphp.png"/>
-            <img src="img/iconjava.png"/>
-            <img src="img/iconsql.png"/>
-            <img src="img/ubuntu.png"/>
+            <img src="img/icons/iconHTML.png"/>
+            <img src="img/icons/iconCSS.png"/>
+            <img src="img/icons/iconphp.png"/>
+            <img src="img/icons/iconjava.png"/>
+            <img src="img/icons/iconsql.png"/>
+            <img src="img/icons/ubuntu.png"/>
+            <img src="img/icons/iconReact.png"/>
         </div>
+        <div class="certificates" id="certificates">
+            <h1>Certificates</h1>
+            <img src="img/certificates/Java-CodeAcademy.PNG" id="Img-certificateJava"/>
+            <img src="img/certificates/SoftwareDesign-CodeAcademy.PNG" id="Img-certificateDesign"/>
+            <img src="img/certificates/SQL-CodeAcademy.PNG" id="Img-certificateSQL"/>
+            <img src="img/certificates/React-CodeAcademy.PNG" id="Img-certificateReact"/>
+            <img src="img/certificates/Git-CodeAcademy.PNG" id="Img-certificateGit"/>
+            <img src="img/certificates/HTML-CodeAcademy.PNG" id="Img-certificateHTML"/>
+            
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+        <script>
+            var modal = document.getElementById('myModal');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img1 = document.getElementById('Img-certificateJava');
+            var img2 = document.getElementById('Img-certificateDesign');
+            var img3 = document.getElementById('Img-certificateSQL');
+            var img4 = document.getElementById('Img-certificateReact');
+            var img5 = document.getElementById('Img-certificateGit');
+            var img6 = document.getElementById('Img-certificateHTML');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img1.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            img2.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            img3.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            img4.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            img5.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            img6.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+        </script>
         <div class="Contact" id="Contact">
             <h4>Contact</h4>
             <ul class="ContactList">
-                <li><img src="img/iconinstragram.png"><a>@manuelvazcas</a></li>
-                <li><img src="img/iconGmail.png"><a>manuel.vazquez@softwareone.com</a></li>
-                <li><img src="img/iconLikedin.png"><a href="https://www.linkedin.com/in/manuel-v%C3%A1zquez-casti%C3%B1eira-199a13239/">Linkedin profile</a></li>
+                <li><img src="img/icons/iconinstragram.png"><a>@manuelvazcas</a></li>
+                <li><img src="img/icons/iconGmail.png"><a>manuel.vazquez@softwareone.com</a></li>
+                <li><img src="img/icons/iconLikedin.png"><a href="https://www.linkedin.com/in/manuel-v%C3%A1zquez-casti%C3%B1eira-199a13239/">Linkedin profile</a></li>
             </ul>
         </div>
     </body>
