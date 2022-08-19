@@ -8,7 +8,7 @@ body{
   background-color: rgb(255, 233, 206);
 }
 
-.Header{
+#Header{
   max-height: 400px;
   background-image: url("img/fondo.jpg");
   background-position: center;
@@ -18,7 +18,7 @@ body{
 
 }
 
-.HeaderText{
+#HeaderText{
   position: relative;
   padding: 15% 0 10%;
   max-width: 640px;
@@ -29,7 +29,7 @@ body{
 
 }
 
-.Navigation {
+#Navigation{
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
@@ -37,7 +37,7 @@ body{
   margin: 0; 
 }
 
-.Navigation a {
+#Navigation a{
   text-decoration: none;
   display: block;
   padding: 1em;
@@ -46,91 +46,93 @@ body{
 
 }
 
-.Navigation a:hover {
+#Navigation a:hover{
   background-color: #aecef4;
 }
 
-.AboutMe {
+#AboutMe{
   margin: 15px;
 }
 
-.AboutMe h1{
+#AboutMe h1{
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-.projects{
+#Projects{
   margin: 15px;
 }
 
-.projects h1{
+#Projects h1{
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-.Skills{
+#Skills{
   margin: 15px;
 }
 
-.Skills h1{
+#Skills h1{
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-.Skills img{
+#Skills img{
   margin: 20px;
   width: 50px;
   height: 50px;
   transition: transform .2s;
+  justify-content: space-around;
 }
 
-.Skills img:hover{
+#Skills img:hover{
   transform: scale(1.5);
 }
 
 
-.certificates{
+#Certificates{
   margin: 15px;
 }
 
-.certificates h1{
+#Certificates h1{
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-.certificates img{
+#Certificates img{
   width: 250px;
   height: 200px;
   margin: 20px;
   transition: transform .2s;
 }
 
-.certificates img:hover{
+#Certificates img:hover{
   transform: scale(1.1);
 }
 
-.dark-mode {
+.Dark-mode {
   background-color: rgb(42, 49, 58);
   color: white;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-.dark-mode h1{
+.Dark-mode h1{
   text-shadow: 1px 1px 4px rgba(242, 227, 227, 0.5);
 }
 
-.dark-mode h4{
+.Dark-mode h4{
   text-shadow: 1px 1px 4px rgba(242, 227, 227, 0.5);
 }
 
-.btn {
+#Btn {
   margin: 5px;
   cursor: pointer;
   border: 0;
   background-color: transparent;
 }
 
-.Contact{
+#Contact{
   margin-left: 15px;
 }
 
-.Contact img{
+#Contact img{
+  margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
   width: 25px;
@@ -138,26 +140,26 @@ body{
   transition: transform .2s;
 }
 
-.Contact img:hover{
+#Contact img:hover{
   transform: scale(1.5);
 }
 
-.Contact a{
+#Contact a{
   margin-bottom: 20px;
   margin-left: 20px;
   position: relative;
   bottom: 20px;
 }
 
-.Contact h4{
+#Contact h4{
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-.Contact h1{
+#Contact h1{
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-.ContactList {
+#ContactList {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -165,7 +167,7 @@ body{
   margin: 0; 
 }
 
-.ContactList a {
+#ContactList a {
   margin-bottom: 20px;
   margin-left: 20px;
   position: relative;
@@ -176,40 +178,40 @@ body{
   body {
     font-size:1.2rem;
   }
-  .navigation {
+  #Navigation {
     justify-content: space-around;
   }
-  .Contact {
+  #Skills img{
     justify-content: space-around;
-  }
-  .ContactList {
-    flex-flow: column wrap;
-    padding: 0;
-  }
-  .ContactList a { 
-    text-align: center; 
-    padding: 10px; 
   }
 }
 
 @media all and (max-width: 850px) {
   body {
-    font-size:1rem;
+    font-size:1rem; 
   }
   iframe {
     width: 560px; 
     height: 315px;
   }
-  .Navigation {
+  #Navigation {
     flex-flow: column wrap;
     padding: 0;
   }
-  .Navigation a { 
+  #Navigation a { 
     text-align: center; 
     padding: 10px; 
   }
-  .Navigation li:last-of-type a {
+  #Navigation li a {
     border-bottom: none;
+  }
+
+  #Navigation li img{
+    justify-content: center; 
+  }
+
+  #Skills img{
+    justify-content: space-around;
   }
 }
 
@@ -222,7 +224,7 @@ body{
 
 /*MODAL*/
 /* The Modal (background) */
-.modal {
+#MyModal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -237,7 +239,7 @@ body{
 }
 
 /* Modal Content (image) */
-.modal-content {
+.Modal-content {
   margin: auto;
   display: block;
   width: 80%;
@@ -245,7 +247,7 @@ body{
 }
 
 /* Caption of Modal Image */
-#caption {
+#Caption {
   margin: auto;
   display: block;
   width: 80%;
@@ -257,7 +259,7 @@ body{
 }
 
 /* Add Animation */
-.modal-content, #caption {  
+.Modal-content, #Caption {  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -275,7 +277,7 @@ body{
 }
 
 /* The Close Button */
-.close {
+.Close {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -285,10 +287,9 @@ body{
   transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.Close:hover,
+.Close:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
 }
-
